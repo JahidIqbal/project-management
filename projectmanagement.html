@@ -9,12 +9,12 @@
     <style>
         /* For active tab underline */
         [data-tab-active="true"] {
-          border-bottom-width: 3px;
-          border-color: #6366f1;
-          /* indigo-500 */
-          color: #6366f1;
+            border-bottom-width: 3px;
+            border-color: #6366f1;
+            /* indigo-500 */
+            color: #6366f1;
         }
-      </style>
+    </style>
 </head>
 
 <body class="bg-gray-900 p-6 min-h-screen text-gray-200">
@@ -60,7 +60,7 @@
                     <p class="text-gray-300">Tickets unresolved</p>
 
                     <div class="flex items-center space-x-2 mt-4">
-                       <span class="font-extrabold text-4xl">23</span>
+                        <span class="font-extrabold text-4xl">23</span>
                     </div>
                 </div>
 
@@ -69,13 +69,62 @@
                     <p class="text-gray-300">Currently working on tasks</p>
 
                     <div class="flex -space-x-3 overflow-visible">
-                       <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dev1" class="z-30 shadow-md border-2 border-gray-900 rounded-full w-12 h-12 "/>
-                       <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dev2" class="z-30 shadow-md border-2 border-gray-900 rounded-full w-12 h-12 "/>
-                       <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dev2" class="z-20 shadow-md border-2 border-gray-900 rounded-full w-12 h-12 "/>
-                       <span class="flex justify-center items-center bg-teal-800 shadow-md border-2 border-gray-900 rounded-full w-12 h-12 font-semibold text-sm">+5</span>
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Dev1"
+                            class="z-30 shadow-md border-2 border-gray-900 rounded-full w-12 h-12 " />
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dev2"
+                            class="z-30 shadow-md border-2 border-gray-900 rounded-full w-12 h-12 " />
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dev2"
+                            class="z-20 shadow-md border-2 border-gray-900 rounded-full w-12 h-12 " />
+                        <span
+                            class="flex justify-center items-center bg-teal-800 shadow-md border-2 border-gray-900 rounded-full w-12 h-12 font-semibold text-sm">+5</span>
                     </div>
                 </div>
             </div>
+
+            <!-- timeline:accordion on mobile ,full cards desktop -->
+            <div class="bg-gray-800 mt-2 p-6 rounded-2xl md:overflow-visible overflow-x-auto">
+                <h2 class="mb-4 font-semibold text-2xl">Project Timeline</h2>
+
+                <!-- accordion for mobile -->
+                <div class="md:hidden space-y-3">
+                    <details class="bg-gray-700 p-4 rounded-xl">
+                        <summary class="font-semibold text-lg cursor-pointer">Sprint 1 Start - 2025-05-01</summary>
+                        <p class="mt-2 text-gray-300">Kickoff with product and team.</p>
+                    </details>
+
+                    <details class="bg-gray-700 p-4 rounded-xl">
+                        <summary class="font-semibold text-lg cursor-pointer">UI Design Complete - 2025-05-10</summary>
+                        <p class="mt-2 text-gray-300">Final designs approved by stakeholders.</p>
+                    </details>
+
+                    <details class="bg-gray-700 p-4 rounded-xl">
+                        <summary class="font-semibold text-lg cursor-pointer">Backend Setup - 2025-05-15</summary>
+                        <p class="mt-2 text-gray-300">API and database ready for integration.</p>
+                    </details>
+
+                    <details class="bg-gray-700 p-4 rounded-xl">
+                        <summary class="font-semibold text-lg cursor-pointer">Alpha Release - 2025-05-25</summary>
+                        <p class="mt-2 text-gray-300">Internal testing and QA phase.</p>
+                    </details>
+                    <details class="bg-gray-700 p-4 rounded-xl">
+                        <summary class="font-semibold text-lg cursor-pointer">Beta Launch - 2025-06-05</summary>
+                        <p class="mt-2 text-gray-300">Closed beta to select users.</p>
+                    </details>
+                    <details class="bg-gray-700 p-4 rounded-xl">
+                        <summary class="font-semibold text-lg cursor-pointer">User Feedback - 2025-06-10</summary>
+                        <p class="mt-2 text-gray-300">Collected feedback and bug reports.</p>
+                    </details>
+                    <details class="bg-gray-700 p-4 rounded-xl">
+                        <summary class="font-semibold text-lg cursor-pointer">Final Release - 2025-06-20</summary>
+                        <p class="mt-2 text-gray-300">Public launch and marketing kickoff.</p>
+                    </details>
+                    <details class="bg-gray-700 p-4 rounded-xl">
+                        <summary class="font-semibold text-lg cursor-pointer">Post Launch - 2025-07-01</summary>
+                        <p class="mt-2 text-gray-300">Monitoring & improvements.</p>
+                    </details>
+                </div>
+            </div>
+
         </section>
     </main>
 </body>
